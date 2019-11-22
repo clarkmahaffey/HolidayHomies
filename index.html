@@ -10,6 +10,12 @@ canvas {
     height: 100%;
     background-size: cover;
 }
+p {
+    font-family: "Avenir";
+}
+button {
+    font-family: "Avenir";
+}
 </style>
 </head>
 <body onload="startGame()">
@@ -18,11 +24,28 @@ canvas {
 var myGamePiece;
 var myObstacles = [];
 var myScore;
+var crash;
+var btn = document.createElement("button");
+btn.innerHTML = "Try again?";
+btn.id = "try";
+btn.addEventListener("mousedown", function(){
+    myObstacles = [];
+    crash = false;
+    myGameArea.frameNo = 0;
+    myGamePiece.gravity = 0.05;
+    myGamePiece.gravitySpeed = 0;
+    myGamePiece.y = 120;
+    myGamePiece.newPos;
+});
+var died = new Image();
+died.src = "You died Screen.jpg";
+
 
 function startGame() {
+    crash = false;
     myGamePiece = new component(90, 50, "santa.png", 10, 120, "image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Avenir", "white", 700, 40, "text");
     myGameArea.start();
 }
 
@@ -92,9 +115,14 @@ function component(width, height, color, x, y, type) {
         var otherright = otherobj.x + (otherobj.width);
         var othertop = otherobj.y;
         var otherbottom = otherobj.y + (otherobj.height);
-        var crash = true;
+        crash = true;
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
+        }
+        if (crash == true) {
+            ctx = myGameArea.context;
+            ctx.drawImage(died, 0, 0, 1050, 450);
+            document.body.appendChild(btn);
         }
         return crash;
     }
@@ -117,8 +145,8 @@ function updateGameArea() {
         minGap = 70;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        myObstacles.push(new component(20, height, "Chimney.png", x, 0, "image"));
+        myObstacles.push(new component(20, x - height - gap, "Chimney.png", x, height + gap, "image"));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
@@ -157,4 +185,8 @@ function santaDown() {
 <p>How long can you stay alive?</p>
 </body>
 </html>
+
+<!-- Credits:
+https://www.w3schools.com/graphics/tryit.asp?filename=trygame_default_gravity
+-->
 
