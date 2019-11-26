@@ -9,8 +9,8 @@ $(document).ready(function() {
 
 function makeNewPosition() {
   // Get viewport dimensions (remove the dimension of the div)
-  var h = $(window).height() - 50;
-  var w = $(window).width() - 50;
+  var h = 450;
+  var w = 1000;
 
   var nh = Math.floor(Math.random() * h);
   var nw = Math.floor(Math.random() * w);
@@ -26,19 +26,24 @@ function animateDeer(myclass) {
 }
 
 var count = 0;
+document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
 function functionA() { 
 	document.getElementById("a").style.display="none";
     count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
 }
 function functionB() { 
 	document.getElementById("b").style.display="none";
     count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
 }
 function functionC() { 
 	document.getElementById("c").style.display="none";
     count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
 }
 function functionD() { 
 	document.getElementById("d").style.display="none";
     count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
 }

@@ -17,7 +17,7 @@ position:fixed;
 #c {
 width: 50px;
 height:66px;
- background-image:url('reindeer.png');
+background-image:url('reindeer.png');
 position:fixed;
     
 }
@@ -27,4 +27,19 @@ height:66px;
  background-image:url('reindeer.png');
 position:fixed;
     
+}
+body {
+  background-image: url(snowBackground.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1050px;
+
+}
+img {
+  position: absolute;
+  left: 0px;
+  top: 450px;
+}
+p {
+    position: absolute;
+    top: 500px;
 }
