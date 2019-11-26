@@ -31,19 +31,35 @@ function functionA() {
 	document.getElementById("a").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 1) {
+        youWin()
+    }
 }
 function functionB() { 
 	document.getElementById("b").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 1) {
+        youWin()
+    }
 }
 function functionC() { 
 	document.getElementById("c").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 1) {
+        youWin()
+    }
 }
 function functionD() { 
 	document.getElementById("d").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 1) {
+        youWin()
+    }
+}
+function youWin() {
+    var back = document.body.style.backgroundImage;
+    back = "url('reindeer.png')";
 }
