@@ -10,7 +10,7 @@ position:fixed;
 #b {
 width: 50px;
 height:66px;
- background-image:url('reindeer.png');
+background-image:url('reindeer.png');
 position:fixed;
     
 }
@@ -29,7 +29,7 @@ position:fixed;
     
 }
 body {
-  background-image: url(snowBackground.jpeg);
+  background-image: url('snowBackground.jpeg');
   background-repeat: no-repeat;
   background-size: 1050px;
 
