@@ -60,6 +60,5 @@ function functionD() {
     }
 }
 function youWin() {
-    var back = document.body.style.backgroundImage;
-    back = "url('reindeer.png')";
+    document.body.style.backgroundImage = "url('reindeer.png')";
 }
