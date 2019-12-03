@@ -3,6 +3,11 @@ $(document).ready(function() {
   animateDeer("#b");
   animateDeer("#c");
   animateDeer("#d");
+  animateDeer("#e");
+  animateDeer("#f");
+  animateDeer("#g");
+  animateDeer("#h");
+  animateDeer("#i");
     
 
 });
@@ -31,7 +36,7 @@ function functionA() {
 	document.getElementById("a").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
-    if (count > 1) {
+    if (count > 8) {
         youWin()
     }
 }
@@ -39,7 +44,7 @@ function functionB() {
 	document.getElementById("b").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
-    if (count > 1) {
+    if (count > 8) {
         youWin()
     }
 }
@@ -47,7 +52,7 @@ function functionC() {
 	document.getElementById("c").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
-    if (count > 1) {
+    if (count > 8) {
         youWin()
     }
 }
@@ -55,11 +60,50 @@ function functionD() {
 	document.getElementById("d").style.display="none";
     count = count + 1;
     document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
-    if (count > 1) {
+    if (count > 8) {
+        youWin()
+    }
+}
+function functionE() { 
+	document.getElementById("e").style.display="none";
+    count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 8) {
+        youWin()
+    }
+}
+function functionF() { 
+	document.getElementById("f").style.display="none";
+    count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 8) {
+        youWin()
+    }
+}
+function functionG() { 
+	document.getElementById("g").style.display="none";
+    count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 8) {
+        youWin()
+    }
+}
+function functionH() { 
+	document.getElementById("h").style.display="none";
+    count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 8) {
+        youWin()
+    }
+}
+function functionI() { 
+	document.getElementById("i").style.display="none";
+    count = count + 1;
+    document.getElementById("demo").innerHTML = "Get all the reindeer to Santa's Sleigh: " + count;
+    if (count > 8) {
         youWin()
     }
 }
 function youWin() {
-    var back = document.body.style.backgroundImage;
-    back = "url('reindeer.png')";
+    document.body.style.backgroundImage = "url('winScreen-01.png')";
 }

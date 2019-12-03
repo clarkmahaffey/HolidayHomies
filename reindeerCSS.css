@@ -28,6 +28,41 @@ background-image:url('reindeer.png');
 position:fixed;
     
 }
+#e {
+width: 50px;
+height:66px;
+background-image:url('reindeer.png');
+position:fixed;
+    
+}
+#f {
+width: 50px;
+height:66px;
+background-image:url('reindeer.png');
+position:fixed;
+    
+}
+#g {
+width: 50px;
+height:66px;
+background-image:url('reindeer.png');
+position:fixed;
+    
+}
+#h {
+width: 50px;
+height:66px;
+background-image:url('reindeer.png');
+position:fixed;
+    
+}
+#i {
+width: 50px;
+height:66px;
+background-image:url('reindeer.png');
+position:fixed;
+    
+}
 body {
   background-image: url('snowBackground.jpeg');
   background-repeat: no-repeat;
@@ -68,4 +103,7 @@ p {
     bottom: 35px;
     text-decoration: none;
     color: black;
+}
+#demo {
+    font-family: "Avenir";
 }
